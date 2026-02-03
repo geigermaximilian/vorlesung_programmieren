@@ -1,4 +1,0 @@
-/**
- * Executable Classes 
- */
-package main;

@@ -1,4 +1,0 @@
-/**
- * Entity Classes 
- */
-package model;

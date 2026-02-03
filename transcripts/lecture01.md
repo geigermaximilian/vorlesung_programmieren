@@ -29,3 +29,11 @@ public class D01_HelloWorld{
                 - *double*, float _(Gleitkommazahlen)_
                 - boolean _(Wahrheitswert)_
                 - char _(einzelnes Zeichen)_
+
+                ! man kann Datentypen nicht abfragen, die noch nicht initialisiert wurden.
+                ! man kann in einen Datentyp nur genau einen Wert speichern.
+
+- float float1 = 0.1F; //F nötig, da sonst double
+- long long1 = 5_000_000_000L; //L nötig, sonst int
+
+
