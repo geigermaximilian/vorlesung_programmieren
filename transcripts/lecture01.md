@@ -15,3 +15,7 @@ public class D01_HelloWorld{
 - Klassennamen müssen mit einem großen Buchstaben beginnen:
     --> public class D01_HelloWorld
     --> void: weil kein Rückgabewert
+
+
+##D02_StaticMethods
+
