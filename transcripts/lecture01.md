@@ -19,3 +19,13 @@ public class D01_HelloWorld{
 
 ##D02_StaticMethods
 
+
+
+##Notizen
+
+- Datenobjekt: Container, worin etwas gespeichert wird.
+- Datentypen: - primitive Datentypen:
+                - *int*, short, byte, long _(ganze Zahlen)_
+                - *double*, float _(Gleitkommazahlen)_
+                - boolean _(Wahrheitswert)_
+                - char _(einzelnes Zeichen)_
