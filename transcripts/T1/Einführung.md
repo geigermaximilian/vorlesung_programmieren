@@ -68,6 +68,7 @@ Ein **Container**, in dem Werte gespeichert werden.
 - Ein Datentyp kann **nur genau einen Wert speichern**.
 - Java ist eine **statische Programmiersprache**  
   → Datentypen müssen immer explizit angegeben werden.
+- Datentypen, die innerhalb einer Methode deklariert wurden, können auch nur innerhalb der Methode aufgerufen werden.
 
 ---
 
