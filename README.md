@@ -8,4 +8,6 @@
 
 ## Mitschriebe
 
-- [Vorlesung 1, 27.01](transcripts/lecture01.md)
+- [Vorlesung 1, 27.01](transcripts/1-27.01.2026.md)
+- [Vorlesung 2, 03.02](transcripts/2-03.02.2026.md)
+- [Vorlesung 3, 05.02](transcripts/3-05.02.2026.md)
