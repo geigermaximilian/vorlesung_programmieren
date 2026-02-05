@@ -1,14 +1,28 @@
 # 🔢 Primitive Datentypen
 
-[🏠 Hauptseite](../README.md)  
-[📘 Vorlesung 1](./README.md)
+[🏠 Zur Lernübersicht](../NOTES.md)
+
+---
+
+## Zugehöriger Code
+
+👉 `src/main/java/main/D03_PrimitiveDataTypes.java`  
+👉 `src/main/java/main/D05_TypeCasting.java`
+
+---
+
+## Überblick
+
+Primitive Datentypen speichern genau **einen Wert**.
+
+Java ist eine **stark typisierte Sprache** → jede Variable benötigt einen festen Datentyp.
 
 ---
 
 ## Ganze Zahlen
 
 | Datentyp | Größe | Beispiel |
-|-----------|---------|-------------|
+|-----------|------------|-------------|
 | byte | 1 Byte | 42 |
 | short | 2 Byte | 300 |
 | int | 4 Byte | 1_000_000 |
@@ -19,8 +33,8 @@
 ## Gleitkommazahlen
 
 | Datentyp | Größe | Beispiel |
-|-----------|---------|-------------|
-| float | 4 Byte | 3.141592F |
+|-----------|------------|-------------|
+| float | 4 Byte | 3.14F |
 | double | 8 Byte | 3.141592653589793 |
 
 ---
@@ -28,29 +42,47 @@
 ## Zeichen
 
 | Datentyp | Größe | Beispiel |
-|-----------|---------|-------------|
+|-----------|------------|-------------|
 | char | 2 Byte | 'X' |
 
 ---
 
 ## Wahrheitswerte
 
-| Datentyp | Größe | Beispiel |
-|-----------|---------|-------------|
-| boolean | - | true |
+| Datentyp | Beispiel |
+|-----------|-------------|
+| boolean | true |
 
 ---
 
-## 📌 Regeln
+## Vorzeichenbehaftet
 
-- Variablen müssen initialisiert werden
-- Primitive Datentypen speichern genau einen Wert
-- Java ist statisch typisiert
+Zahlen können positiv oder negativ sein.
 
 ---
 
-## 💡 Beispiele
+## Symbol vs Zahlenwert
+
+Ein Zeichen besitzt einen numerischen Wert.
+
+Beispiel:
+
+- `'9'` ≠ `9`
+- `'a'` besitzt anderen Zahlenwert als `'A'`
+- Speicherung erfolgt über UTF / Unicode Tabellen
+
+---
+
+## Wertigkeit von Datentypen
+
+### Implizite Umwandlung
+
+Automatische Typanpassung bei kompatiblen Datentypen.
+
+---
+
+## Type Casting
 
 ```java
-float float1 = 0.1F;
-long long1 = 5_000_000_000L;
+double d = 1.9;
+int i = (int) d;
