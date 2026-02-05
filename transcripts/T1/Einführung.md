@@ -1,6 +1,22 @@
-# Vorlesung 1 – 27.01
+# 📘 Programmierung – Vorlesung 1 (27.01)
 
-## Hello World – Besprechung
+---
+
+## 🧭 Navigation
+
+[![Hello World](https://img.shields.io/badge/Hello_World-blue)](#-hello-world)
+[![Static Methods](https://img.shields.io/badge/Static_Methods-purple)](#-static-methods)
+[![Primitive Datentypen](https://img.shields.io/badge/Primitive_Datentypen-green)](#-primitive-datentypen)
+[![Notizen](https://img.shields.io/badge/Notizen-orange)](#-notizen)
+[![Prüfung](https://img.shields.io/badge/Prüfungsrelevant-red)](#-prüfungsrelevant)
+[![Zusammenfassung](https://img.shields.io/badge/Zusammenfassung-yellow)](#-zusammenfassung)
+
+---
+
+# 💻 Hello World
+
+<details open>
+<summary><b>Code Beispiel</b></summary>
 
 ```java
 public class D01_HelloWorld {
@@ -8,7 +24,6 @@ public class D01_HelloWorld {
     public static void main(String[] args) {
 
         String text; // Deklaration
-
         text = "Hello World"; // Initialisierung
 
         System.out.println(text); // Ausgabe
@@ -16,84 +31,136 @@ public class D01_HelloWorld {
 }
 ```
 
-### Hinweise
-
-- Klassennamen müssen mit einem **großen Buchstaben** beginnen  
-  → `public class D01_HelloWorld`
-
-- `void` bedeutet:  
-  → Die Methode hat **keinen Rückgabewert**
+</details>
 
 ---
 
-## D02_StaticMethods
+### 📌 Hinweise
 
-*(Noch keine Inhalte)*
-
----
-
-## Notizen
-
-### Datenobjekt
-Ein **Container**, in dem Werte gespeichert werden.
+- Klassennamen beginnen mit Großbuchstaben
+- `void` bedeutet → kein Rückgabewert
+- `main()` ist der Programmeinstiegspunkt
 
 ---
 
-### Datentypen
+# ⚙ Static Methods
 
-#### Primitive Datentypen
-(Hart in Java implementierte Datentypen → beginnen mit **kleinem Anfangsbuchstaben**)
+<details>
+<summary><b>Erklärung</b></summary>
 
-- **Ganze Zahlen**
-  - `int`
-  - `short`
-  - `byte`
-  - `long`
+➡ Methoden, die zur Klasse gehören und nicht zu einem Objekt.
 
-- **Gleitkommazahlen**
-  - `double`
-  - `float`
+Beispiel:
 
-- **Wahrheitswert**
-  - `boolean`
+```java
+public static void hallo() {
+    System.out.println("Hallo");
+}
+```
 
-- **Einzelnes Zeichen**
-  - `char`
+</details>
 
 ---
 
-### Wichtige Regeln
+# 🔢 Primitive Datentypen
 
-- Man kann Datentypen **nicht abfragen**, wenn sie noch nicht initialisiert wurden.
-- Ein Datentyp kann **nur genau einen Wert speichern**.
-- Java ist eine **statische Programmiersprache**  
-  → Datentypen müssen immer explizit angegeben werden.
-- Datentypen, die innerhalb einer Methode deklariert wurden, können auch nur innerhalb der Methode aufgerufen werden.
+<details open>
+<summary><b>Übersicht</b></summary>
 
----
-
-## Übersicht primitive Datentypen
+## Ganze Zahlen
 
 | Datentyp | Größe | Beispiel |
 |-----------|---------|-------------|
-| **Ganze Zahlen** | | |
 | byte | 1 Byte | 42 |
 | short | 2 Byte | 300 |
 | int | 4 Byte | 1_000_000 |
 | long | 8 Byte | 87_290_255_124 |
-| **Gleitkommazahlen** | | |
-| float | 4 Byte | 3.141592F |
-| double | 8 Byte | 3.141592653589793 |
-| **Zeichen** | | |
-| char | 2 Byte | 'X' |
-| **Boolscher Wahrheitswert** | | |
-| boolean | - | true |
 
 ---
 
-## Beispiele
+## Gleitkommazahlen
+
+| Datentyp | Größe | Beispiel |
+|-----------|---------|-------------|
+| float | 4 Byte | 3.141592F |
+| double | 8 Byte | 3.141592653589793 |
+
+---
+
+## Zeichen
+
+| Datentyp | Größe | Beispiel |
+|-----------|---------|-------------|
+| char | 2 Byte | 'X' |
+
+---
+
+## Wahrheitswerte
+
+| Datentyp | Größe | Beispiel |
+|-----------|---------|-------------|
+| boolean | - | true |
+
+</details>
+
+---
+
+### 📌 Regeln
+
+- Variablen müssen initialisiert werden
+- Primitive Datentypen speichern genau einen Wert
+- Java ist statisch typisiert
+
+---
+
+### 💡 Beispiele
 
 ```java
-float float1 = 0.1F; // F nötig, da sonst double
-long long1 = 5_000_000_000L; // L nötig, sonst int
+float float1 = 0.1F; 
+long long1 = 5_000_000_000L;
 ```
+
+---
+
+# 📝 Notizen
+
+<details>
+<summary><b>Grundlagen</b></summary>
+
+### Datenobjekt
+Container zum Speichern von Daten.
+
+### Scope
+Variablen sind nur innerhalb ihres Gültigkeitsbereichs sichtbar.
+
+</details>
+
+---
+
+# 🚨 Prüfungsrelevant
+
+<details>
+<summary><b>Merken</b></summary>
+
+✅ Unterschied primitive Datentypen  
+✅ Bedeutung von `static`  
+✅ Aufbau einer Java Klasse  
+✅ Einstiegspunkt `main()`  
+✅ Initialisierung von Variablen  
+
+</details>
+
+---
+
+# 📚 Zusammenfassung
+
+- Java ist objektorientiert und statisch typisiert
+- Programme starten in der `main()` Methode
+- Primitive Datentypen sind fest definiert
+- Methoden strukturieren Programme
+
+---
+
+</details>
+
+---
