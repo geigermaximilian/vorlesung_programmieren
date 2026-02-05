@@ -1,28 +1,23 @@
-
----
-
-# 📄 `notes/strings.md`
-
-```markdown
 # 🧵 Strings
 
-[🏠 Zur Lernübersicht](../NOTES.md)
+[🏠 Zur Übersicht](../README.md)
+
+[![Strings](https://img.shields.io/badge/Strings-red)]
 
 ---
 
-## Zugehöriger Code
-
-👉 `src/main/java/main/D06_Strings.java`
+## 🔗 Zugehöriger Code
+👉 `D06_Strings.java`
 
 ---
 
-## Definition
+## 📖 Definition
 
 Strings speichern Text.
 
 ---
 
-## Beispiel
+## 🧪 Beispiel
 
 ```java
 String text = "Hallo Welt";

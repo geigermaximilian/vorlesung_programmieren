@@ -1,37 +1,31 @@
-
----
-
-# 📄 `notes/hello-world.md`
-
-```markdown
 # 💻 Hello World
 
-[🏠 Zur Lernübersicht](../NOTES.md)
+[🏠 Zur Übersicht](../README.md)
+
+[![Java](https://img.shields.io/badge/Java-Basics-blue)]
 
 ---
 
-## Zugehöriger Code
-
+## 🔗 Zugehöriger Code
 👉 `src/main/java/main/D01_HelloWorld.java`
 
 ---
 
-## Erklärung
+## 📖 Erklärung
 
-Erstes Java Programm zur Ausgabe von Text.
+Das erste Java Programm.  
+Gibt Text auf der Konsole aus.
 
 ---
 
-## Beispiel
+## 🧪 Beispiel
 
 ```java
 public class D01_HelloWorld {
 
     public static void main(String[] args) {
 
-        String text;
-        text = "Hello World";
-
+        String text = "Hello World";
         System.out.println(text);
     }
 }

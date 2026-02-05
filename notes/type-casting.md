@@ -1,23 +1,30 @@
+
+---
+
+# ⭐ notes/type-casting.md
+
+```markdown
 # 🔄 Type Casting
 
-[🏠 Zur Lernübersicht](../NOTES.md)
+[🏠 Zur Übersicht](../README.md)
+
+[![Casting](https://img.shields.io/badge/Type_Casting-orange)]
 
 ---
 
-## Zugehöriger Code
-
-👉 `src/main/java/main/D05_TypeCasting.java`
-
----
-
-## Definition
-
-Type Casting ist die Umwandlung eines Datentyps in einen anderen.
+## 🔗 Zugehöriger Code
+👉 `D05_TypeCasting.java`
 
 ---
 
-## Beispiel
+## 📖 Definition
+
+Umwandlung eines Datentyps.
+
+---
+
+## 🧪 Beispiel
 
 ```java
 double d = 1.9;
-float f = (float) d;
+int i = (int) d;

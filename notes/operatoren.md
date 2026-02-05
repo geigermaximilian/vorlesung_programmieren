@@ -1,22 +1,23 @@
 
 ---
 
-# 📄 `notes/operatoren.md`
+# ⭐ notes/operatoren.md
 
 ```markdown
-# ➕ Arithmetische Operatoren
+# ➕ Operatoren
 
-[🏠 Zur Lernübersicht](../NOTES.md)
+[🏠 Zur Übersicht](../README.md)
 
----
-
-## Zugehöriger Code
-
-👉 `src/main/java/main/D07_ArithmeticOperators.java`
+[![Operatoren](https://img.shields.io/badge/Arithmetic_Operators-lightgrey)]
 
 ---
 
-## Grundoperatoren
+## 🔗 Zugehöriger Code
+👉 `D07_ArithmeticOperators.java`
+
+---
+
+## 📖 Grundoperatoren
 
 | Operator | Bedeutung |
 |-------------|----------------|
@@ -28,7 +29,7 @@
 
 ---
 
-## Beispiel
+## 🧪 Beispiel
 
 ```java
 int a = 10;

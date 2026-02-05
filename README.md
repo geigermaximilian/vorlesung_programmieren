@@ -1,31 +1,52 @@
 # 📘 Java Lernprojekt
 
-Dieses Repository enthält Java Übungen und Lernnotizen.
+---
+
+## 🧭 Themenübersicht
+
+### 💻 Grundlagen
+[![Hello World](https://img.shields.io/badge/Hello_World-blue)](notes/hello-world.md)
+[![Static Methods](https://img.shields.io/badge/Static_Methods-purple)](notes/static-methods.md)
 
 ---
 
-## 🧠 Theorie & Lernübersicht
-
-👉 [Lernübersicht öffnen](NOTES.md)
-
----
-
-## 📝 Mitschriften aus dem Unterricht
-
-👉 [notes Ordner](notes/)
+### 🔢 Datentypen
+[![Primitive Datentypen](https://img.shields.io/badge/Primitive_Datentypen-green)](notes/primitive-datentypen.md)
+[![Type Casting](https://img.shields.io/badge/Type_Casting-orange)](notes/type-casting.md)
 
 ---
 
-## 💻 Java Beispiele
+### 📦 Speicher & Objekte
+[![Datenobjekte](https://img.shields.io/badge/Datenobjekte-yellow)](notes/datenobjekte.md)
 
-| Thema | Datei |
-|------------|--------------------------|
-| Hello World | `D01_HelloWorld.java` |
-| Static Methods | `D02_StaticMethods.java` |
-| Primitive Datentypen | `D03_PrimitiveDataTypes.java` |
-| Datenobjekte | `D04_DataObjects.java` |
-| Type Casting | `D05_TypeCasting.java` |
-| Strings | `D06_Strings.java` |
-| Operatoren | `D07_ArithmeticOperators.java` |
+---
+
+### 🧵 Strings
+[![Strings](https://img.shields.io/badge/Strings-red)](notes/strings.md)
+
+---
+
+### ➕ Operatoren
+[![Operatoren](https://img.shields.io/badge/Operatoren-lightgrey)](notes/operatoren.md)
+
+---
+
+## 📝 Mitschriften
+
+👉 [notes Ordner öffnen](notes/)
+
+---
+
+## 💻 Java Dateien
+
+| Datei | Beschreibung |
+|---------|----------------|
+| D01_HelloWorld.java | Einstieg |
+| D02_StaticMethods.java | Methoden |
+| D03_PrimitiveDataTypes.java | Datentypen |
+| D04_DataObjects.java | Objekte |
+| D05_TypeCasting.java | Umwandlungen |
+| D06_Strings.java | Textverarbeitung |
+| D07_ArithmeticOperators.java | Operatoren |
 
 ---

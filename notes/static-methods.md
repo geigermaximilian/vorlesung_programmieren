@@ -1,28 +1,30 @@
 
 ---
 
-# 📄 `notes/static-methods.md`
+# ⭐ notes/static-methods.md
 
 ```markdown
 # ⚙ Static Methods
 
-[🏠 Zur Lernübersicht](../NOTES.md)
+[🏠 Zur Übersicht](../README.md)
+
+[![Static](https://img.shields.io/badge/Static_Methods-purple)]
 
 ---
 
-## Zugehöriger Code
-
+## 🔗 Zugehöriger Code
 👉 `src/main/java/main/D02_StaticMethods.java`
 
 ---
 
-## Erklärung
+## 📖 Erklärung
 
-Static Methoden gehören zur Klasse und nicht zu einem Objekt.
+Static Methoden gehören zur Klasse  
+und nicht zu einem Objekt.
 
 ---
 
-## Beispiel
+## 🧪 Beispiel
 
 ```java
 public static void hallo() {

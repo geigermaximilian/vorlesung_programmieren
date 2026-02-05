@@ -1,29 +1,28 @@
 
 ---
 
-# 📄 `notes/datenobjekte.md`
+# ⭐ notes/datenobjekte.md
 
 ```markdown
 # 📦 Datenobjekte
 
-[🏠 Zur Lernübersicht](../NOTES.md)
+[🏠 Zur Übersicht](../README.md)
+
+[![Objekte](https://img.shields.io/badge/Data_Objects-yellow)]
 
 ---
 
-## Zugehöriger Code
-
-👉 `src/main/java/main/D04_DataObjects.java`
-
----
-
-## Definition
-
-Ein Datenobjekt ist ein Container zum Speichern von Daten.
+## 🔗 Zugehöriger Code
+👉 `D04_DataObjects.java`
 
 ---
 
-## Scope
+## 📖 Definition
 
-Der Scope bestimmt die Sichtbarkeit einer Variable.
+Container zum Speichern von Daten.
 
-Variablen sind nur innerhalb ihres Gültigkeitsbereichs sichtbar.
+---
+
+## 🌍 Scope
+
+Variablen sind nur in ihrem Gültigkeitsbereich sichtbar.
