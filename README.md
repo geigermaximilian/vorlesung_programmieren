@@ -1,48 +1,114 @@
-# 📘 Java Grundlagen – Lernübersicht
+# ☕ Java Lernnotizen
+
+Diese Notizen basieren auf den Vorlesungen im Modul **Programmieren**.  
+Jedes Thema ist einklappbar, damit die Übersicht erhalten bleibt.
 
 ---
 
-## 🧭 Navigation
-
-[![Hello World](https://img.shields.io/badge/Hello_World-blue)](#-hello-world)
-[![Static Methods](https://img.shields.io/badge/Static_Methods-purple)](#-static-methods)
-[![Primitive Datentypen](https://img.shields.io/badge/Primitive_Datentypen-green)](#-primitive-datentypen)
-[![Datenobjekte](https://img.shields.io/badge/Datenobjekte-orange)](#-datenobjekte--scope)
-[![Type Casting](https://img.shields.io/badge/Type_Casting-yellow)](#-type-casting)
-[![Strings](https://img.shields.io/badge/Strings-red)](#-strings)
-[![Operatoren](https://img.shields.io/badge/Operatoren-lightgrey)](#-operatoren)
-[![Prüfung](https://img.shields.io/badge/Prüfungsrelevant-darkred)](#-prüfungsrelevant)
+## 📚 Inhaltsverzeichnis
+- Hello World
+- Statische Methoden
+- Primitive Datentypen
+- Operatoren
 
 ---
 
-# 💻 Hello World
+<details>
+<summary><h2>Hello World</h2></summary>
 
-👉 Demo Datei: `D01_HelloWorld.java`
-
----
-
-## 📖 Programmablauf
-
-```mermaid
-flowchart TD
-    A(Start Programm)
-    A --> B(main Methode)
-    B --> C(String Variable erstellen)
-    C --> D(Console Ausgabe)
-```
-
----
-
-<details open>
-<summary><b>Code Beispiel</b></summary>
+### Beispielcode
 
 ```java
 public class D01_HelloWorld {
+    public static void main(String[] args) {
+
+        String text; // Deklaration
+
+        text = "Hello World"; // Initialisierung
+
+        System.out.println(text); // Ausgabe
+    }
+}
+```
+
+### Notizen
+- Klassennamen beginnen mit einem Großbuchstaben.
+- `main` ist die Startmethode eines Java-Programms.
+- `void` bedeutet: kein Rückgabewert.
+
+</details>
+
+---
+
+<details>
+<summary><h2>Statische Methoden</h2></summary>
+
+### Beispielcode
+
+```java
+public class D02_StaticMethods {
+
+    public static void main(String[] args) {
+        sayHello();
+    }
+
+    public static void sayHello() {
+        System.out.println("Hello from static method");
+    }
+}
+```
+
+### Notizen
+- `static` bedeutet: Methode gehört zur Klasse, nicht zum Objekt.
+- Kann ohne Objekt aufgerufen werden.
+
+</details>
+
+---
+
+<details>
+<summary><h2>Primitive Datentypen</h2></summary>
+
+### Übersicht
+
+| Datentyp | Größe | Beispiel |
+|----------|-------|----------|
+| byte | 1 Byte | 42 |
+| short | 2 Byte | 300 |
+| int | 4 Byte | 1_000_000 |
+| long | 8 Byte | 87_290_255_124 |
+| float | 4 Byte | 3.14F |
+| double | 8 Byte | 3.14 |
+| char | 2 Byte | X |
+| boolean | - | true |
+
+### Notizen
+- Primitive Datentypen sind fest in Java eingebaut.
+- Java ist **statisch typisiert** → Datentyp muss angegeben werden.
+- Eine Variable kann nur **einen Wert** speichern.
+- Man kann Datentypen nicht verwenden, wenn sie nicht initialisiert sind.
+
+### Beispiele
+
+```java
+public class D03_PrimitiveDataTypes {
 
     public static void main(String[] args) {
 
-        String text = "Hello World";
-        System.out.println(text);
+        int zahl = 10;
+        double preis = 19.99;
+        boolean istStudent = true;
+        char buchstabe = 'A';
+
+        float f = 0.1F;          // F nötig
+        long l = 5_000_000_000L; // L nötig
+
+        System.out.println(zahl);
+        System.out.println(preis);
+        System.out.println(istStudent);
+        System.out.println(buchstabe);
+        System.out.println(f);
+        System.out.println(l);
     }
 }
 ```
@@ -51,291 +117,40 @@ public class D01_HelloWorld {
 
 ---
 
-### 📌 Merken
-
-- `main()` ist Einstiegspunkt  
-- `void` bedeutet kein Rückgabewert  
-- Klassennamen beginnen mit Großbuchstaben  
-
----
-
-# ⚙ Static Methods
-
-👉 Demo Datei: `D02_StaticMethods.java`
-
----
-
-## 📖 Erklärung
-
-Static Methoden gehören zur Klasse und nicht zu einem Objekt.
-
----
-
-```mermaid
-classDiagram
-    class Klasse {
-        +static Methode()
-    }
-```
-
----
-
 <details>
-<summary><b>Code Beispiel</b></summary>
+<summary><h2>Operatoren</h2></summary>
+
+### Arithmetische Operatoren
+
+| Operator | Bedeutung | Beispiel |
+|----------|----------|----------|
+| + | Addition | 5 + 3 = 8 |
+| - | Subtraktion | 5 - 3 = 2 |
+| * | Multiplikation | 5 * 3 = 15 |
+| / | Division | 6 / 3 = 2 |
+| % | Modulo (Rest) | 7 % 3 = 1 |
+
+### Beispielcode
 
 ```java
-public static void hallo() {
-    System.out.println("Hallo");
+public class D07_ArithmeticOperators {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 3;
+
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraktion: " + (a - b));
+        System.out.println("Multiplikation: " + (a * b));
+        System.out.println("Division: " + (a / b));
+        System.out.println("Modulo: " + (a % b));
+    }
 }
 ```
 
-</details>
-
----
-
-### 📌 Merken
-
-- Zugriff ohne Objekt  
-- Wird über Klassenname aufgerufen  
-
----
-
-# 🔢 Primitive Datentypen
-
-👉 Demo Datei: `D03_PrimitiveDataTypes.java`
-
----
-
-## 📖 Übersicht
-
-```mermaid
-graph TD
-    A[Primitive Datentypen]
-    A --> B[Ganze Zahlen]
-    A --> C[Gleitkomma]
-    A --> D[Zeichen]
-    A --> E[Boolean]
-```
-
----
-
-<details open>
-<summary><b>Datentyp Tabelle</b></summary>
-
-### Ganze Zahlen
-
-| Datentyp | Größe |
-|-----------|------------|
-| byte | 1 Byte |
-| short | 2 Byte |
-| int | 4 Byte |
-| long | 8 Byte |
-
----
-
-### Gleitkommazahlen
-
-| Datentyp | Größe |
-|-----------|------------|
-| float | 4 Byte |
-| double | 8 Byte |
-
----
-
-### Zeichen
-
-```java
-char buchstabe = 'A';
-```
-
----
-
-### Wahrheitswerte
-
-```java
-boolean status = true;
-```
+### Notizen
+- Bei Ganzzahlen wird bei Division der **Rest abgeschnitten**.
+- `%` gibt den Rest einer Division zurück.
 
 </details>
-
----
-
-### 📌 Regeln
-
-- Primitive Datentypen speichern genau einen Wert  
-- Java ist stark typisiert  
-- Variablen müssen initialisiert werden  
-
----
-
-# 📦 Datenobjekte & Scope
-
-👉 Demo Datei: `D04_DataObjects.java`
-
----
-
-```mermaid
-flowchart LR
-    Klasse --> Objekt
-    Objekt --> Daten
-    Objekt --> Methoden
-```
-
----
-
-<details>
-<summary><b>Grundlagen</b></summary>
-
-### Datenobjekt  
-Container zum Speichern von Daten.
-
----
-
-### Scope  
-Bestimmt die Sichtbarkeit von Variablen.  
-Variablen sind nur innerhalb ihres Blocks sichtbar.
-
-</details>
-
----
-
-# 🔄 Type Casting
-
-👉 Demo Datei: `D05_TypeCasting.java`
-
----
-
-## 📖 Datentyp Umwandlung
-
-```mermaid
-flowchart LR
-    double --> int
-    int --> byte
-```
-
----
-
-<details>
-<summary><b>Beispiel</b></summary>
-
-```java
-double d = 1.9;
-int i = (int) d;
-```
-
-</details>
-
----
-
-### ⚠ Wertverlust
-
-Beim Umwandeln können Dezimalstellen verloren gehen.  
-➡ Ergebnis = 1  
-
----
-
-### 📌 Begriffe
-
-**Implizite Umwandlung**  
-→ Automatisch  
-
-**Explizites Casting**  
-→ Muss programmiert werden  
-
----
-
-# 🧵 Strings
-
-👉 Demo Datei: `D06_Strings.java`
-
----
-
-<details>
-<summary><b>Grundlagen</b></summary>
-
-Strings speichern Text.
-
-```java
-String text = "Hallo Welt";
-```
-
-</details>
-
----
-
-### 📌 Eigenschaften
-
-- Strings sind Objekte  
-- Verkettung mit `+` möglich  
-
----
-
-# ➕ Operatoren
-
-👉 Demo Datei: `D07_ArithmeticOperators.java`
-
----
-
-<details>
-<summary><b>Operator Übersicht</b></summary>
-
-| Operator | Bedeutung |
-|-------------|----------------|
-| + | Addition |
-| - | Subtraktion |
-| * | Multiplikation |
-| / | Division |
-| % | Modulo |
-
----
-
-```java
-int a = 10;
-int b = 3;
-
-int sum = a + b;
-int rest = a % b;
-```
-
-</details>
-
----
-
-# 🚨 Prüfungsrelevant
-
-<details>
-<summary><b>Merken</b></summary>
-
-✅ Primitive Datentypen  
-✅ Static Methoden  
-✅ Aufbau einer Java Klasse  
-✅ main Methode  
-✅ Type Casting  
-✅ Scope  
-
-</details>
-
----
-
-# 📚 Gesamt Zusammenfassung
-
-- Java ist objektorientiert  
-- Java ist stark typisiert  
-- Programme starten in `main()`  
-- Primitive Datentypen speichern einzelne Werte  
-- Static Methoden gehören zur Klasse  
-- Casting verändert Datentypen  
-- Strings speichern Text  
-- Operatoren führen Berechnungen aus  
-
----
-
-# 🎯 Lernstrategie
-
-1. Demo Code lesen  
-2. README durcharbeiten  
-3. Code verändern  
-4. Übungen schreiben  
-5. Wiederholen  
-
----
