@@ -7,7 +7,7 @@ public class D02_StaticMethods {
 
     public static void main(String[] args){
         Printer.printHelloWorld();
-        Printer.printText("test");;
+        Printer.printText("test");
 
         int result = Calculator.add(5, 3);
         System.out.println(result);

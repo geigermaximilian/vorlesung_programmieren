@@ -11,7 +11,7 @@
 
    <properties>
       <!-- Java-Version -->
-      <maven.compiler.release>21</maven.compiler.release>
+      <maven.compiler.release>25</maven.compiler.release>
       <!-- Codierung -->
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
