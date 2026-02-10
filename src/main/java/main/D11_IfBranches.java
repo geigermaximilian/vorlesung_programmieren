@@ -9,10 +9,27 @@ public class D11_IfBranches {
         System.out.print("Bitte Alter eingeben: ");
         int age = scanner.nextInt();
 
-        if(age<18){
+        /* EInfachverzweigung */
+        if (age < 18) {
             System.out.println("Du bist Minderjährig.");
         } else {
             System.out.println("Du bist volljährig.");
         }
+
+        /* Mehrfachverzweigung */
+        if (age < 12) {
+            System.out.println("Du bist ein Kind.");
+        } else if (age < 18) {
+            System.out.println("Du bist ein Jugendlicher.");
+        } else if (age < 65) {
+            System.out.println("Du bist ein Erwachsenser.");
+        } else {
+            System.out.println("Du bist ein alter Mensch.");
+        }
+
+
+        /* Vergleichs-Operatoren: <, <=, >, >=, ==, != */ 
+
+        /* Logische Operatoren: && (logisches Und), || (logisches Oder), ! (logische Verneinung) */
     }
 }
