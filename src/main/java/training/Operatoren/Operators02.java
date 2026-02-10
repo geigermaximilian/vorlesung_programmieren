@@ -16,10 +16,10 @@ public class Operators02 {
         int g = 0;
         int h = 2;
 
-        a = 3 * ++b; //a=3, b=1
-        c = 3 * a++; //a=4, c=9
+        a = 3 * ++b; //a=
+        c = 3 * a++;
 
-        d *= 6 + ++e; 
+        d *= 6 + ++e;
         e = --f - 5 - f--;
         f = f + d % (e * 2);
 
@@ -28,10 +28,10 @@ public class Operators02 {
         System.out.println("a=4: " + a);
         System.out.println("b=1: " + b);
         System.out.println("c=9: " + c);
-        System.out.println("d=34: " + d);
-        System.out.println("e=-4: " + e);
-        System.out.println("f=3: " + f);
-        System.out.println("g=2: " + g);
-        System.out.println("h=2: " + h);
+        System.out.println("d=50: " + d);
+        System.out.println("e=-7: " + e);
+        System.out.println("f=6: " + f);
+        System.out.println("g=8: " + g);
+        System.out.println("h=0: " + h);
     }
 }
