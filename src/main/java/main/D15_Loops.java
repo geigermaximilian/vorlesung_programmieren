@@ -33,5 +33,34 @@ public class D15_Loops {
             x++;
         } while (x <= 100);
 
-    }
+
+
+        /* for-Schleife (Zählschleife) */
+
+        for(int m=1 /*wird bei Beginn initialisiert */; m<100 /*wird dann geprüft */; m++/*wird nach jedem Durchlauf durchgeführt */){
+            System.out.println(m);
+        }
+
+
+
+        /* Endlosschleife */
+        while(true){
+            System.out.println("Schleife beenden (true oder false)?: ");
+            boolean answer = scanner.nextBoolean();
+            if(answer){
+                break;
+            }
+            System.out.println(System.currentTimeMillis());
+
+            System.out.print("Uhrzeit ausgeben (true oder false)?: ");
+            answer = scanner.nextBoolean();
+            if (!answer){
+                continue;
+            }
+            System.out.println(System.currentTimeMillis());
+        }
+
+
+    
+}
 }

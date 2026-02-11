@@ -1,131 +1,47 @@
-## Mögliche Klausurfragen (Gesamter Stoff)
-
-### 1) Was ist der Unterschied zwischen primitiven Datentypen und Objekten?
-<details>
-<summary>Antwort anzeigen</summary>
-
-- Primitive Datentypen speichern **direkt einen Wert** (z. B. `int`, `double`, `char`, `boolean`).
-- Objekte (z. B. `String`) sind **Instanzen von Klassen** und werden über Referenzen verwaltet.
-
-</details>
+# Programmieren – Zusammenfassung
 
 ---
 
-### 2) Wann verwendet man `==` und wann `.equals()` in Java?
-<details>
-<summary>Antwort anzeigen</summary>
+## Primitive Datentypen
+Primitive Datentypen speichern **direkt einen Wert**.
 
-- `==` für **primitive Datentypen**.
-- `.equals()` für **Objekte**, insbesondere `String`.
+### Ganzzahlen
+| Typ | Größe | Beispiel |
+|-----|-------|----------|
+| `byte` | 8 Bit | `byte b = 10;` |
+| `short` | 16 Bit | `short s = 1000;` |
+| `int` | 32 Bit | `int i = 100000;` |
+| `long` | 64 Bit | `long l = 100000L;` |
 
-</details>
+### Kommazahlen
+| Typ | Größe | Beispiel |
+|-----|-------|----------|
+| `float` | 32 Bit | `float f = 3.14F;` |
+| `double` | 64 Bit | `double d = 3.14;` |
 
----
-
-### 3) Was ist der Unterschied zwischen `float` und `double`?
-<details>
-<summary>Antwort anzeigen</summary>
-
-- `float`: 32 Bit, geringere Genauigkeit, benötigt Suffix `F`.
-- `double`: 64 Bit, höhere Genauigkeit, Standard für Kommazahlen.
-
-</details>
-
----
-
-### 4) Wann verwendet man `switch` und wann `if-else`?
-<details>
-<summary>Antwort anzeigen</summary>
-
-- `switch`: Wenn nur **Gleichheit** eines Wertes geprüft wird.
-- `if-else`: Bei **Bereichen** oder komplexen Bedingungen (`>`, `<`, `>=`, usw.).
-
-</details>
-
----
-
-### 5) Was ist der Unterschied zwischen kopf- und fußgesteuerter Schleife?
-<details>
-<summary>Antwort anzeigen</summary>
-
-- Kopfgesteuert (`while`): Bedingung wird **vor** dem Durchlauf geprüft → kann **0‑mal** laufen.
-- Fußgesteuert (`do-while`): Bedingung wird **nach** dem Durchlauf geprüft → läuft **mindestens 1‑mal**.
-
-</details>
-
----
-
-### 6) Was macht der ternäre Operator?
-<details>
-<summary>Antwort anzeigen</summary>
-
-Er ersetzt eine einfache `if-else`-Zuweisung in einer Zeile:
-
-```
-bedingung ? wertWennTrue : wertWennFalse;
-```
-
-</details>
-# Datentypen (Grundlagen)
-
-## Primitive Datentypen in Java
-
-### Ganzzahlen (ohne Nachkommastellen)
-| Typ | Größe | Wertebereich (ca.) | Beispiel |
-|-----|-------|--------------------|----------|
-| `byte` | 8 Bit | -128 bis 127 | `byte b = 10;` |
-| `short` | 16 Bit | -32.768 bis 32.767 | `short s = 1000;` |
-| `int` | 32 Bit | ca. ±2 Milliarden | `int i = 100000;` |
-| `long` | 64 Bit | sehr große Zahlen | `long l = 100000L;` |
-
-### Kommazahlen (mit Nachkommastellen)
-| Typ | Größe | Genauigkeit | Beispiel |
-|-----|-------|-------------|----------|
-| `float` | 32 Bit | ca. 7 Stellen | `float f = 3.14F;` |
-| `double` | 64 Bit | ca. 15 Stellen | `double d = 3.14;` |
-
-### Zeichen
-| Typ | Größe | Beschreibung | Beispiel |
-|-----|-------|--------------|----------|
-| `char` | 16 Bit | einzelnes Zeichen | `char c = 'A';` |
-
-### Wahrheitswert
-| Typ | Beschreibung | Beispiel |
-|-----|--------------|----------|
-| `boolean` | `true` oder `false` | `boolean ok = true;` |
+### Weitere primitive Typen
+| Typ | Bedeutung | Beispiel |
+|-----|-----------|----------|
+| `char` | einzelnes Zeichen | `char c = 'A';` |
+| `boolean` | Wahrheitswert | `boolean ok = true;` |
 
 ---
 
 ## String (kein primitiver Datentyp)
-
-`String` ist **kein primitiver Datentyp**, sondern ein **Objekt** (eine Klasse).
+`String` ist ein **Objekt** (Klasse), kein primitiver Datentyp.
 
 Beispiel:
 ```java
 String text = "Hallo";
 ```
 
-**Wichtiger Unterschied:**
-- Primitive Typen → Vergleich mit `==`
-- `String` (Objekt) → Vergleich mit `.equals()`
+Vergleich:
+- Primitive Typen → `==`
+- Objekte (`String`) → `.equals()`
 
 ---
 
-## Ganzzahlen vs. Kommazahlen
-
-### Ganzzahlen
-- `byte`
-- `short`
-- `int`
-- `long`
-
-### Kommazahlen
-- `float`
-- `double`
-
----
-
-# Operatoren
+## Operatoren
 
 ### Arithmetische Operatoren
 | Operator | Bedeutung | Beispiel | Ergebnis |
@@ -138,7 +54,7 @@ String text = "Hallo";
 
 ---
 
-## Vergleichsoperatoren
+### Vergleichsoperatoren
 | Operator | Bedeutung |
 |----------|-----------|
 | `==` | Gleich |
@@ -150,111 +66,184 @@ String text = "Hallo";
 
 ---
 
-## Bedingter Operator (Ternärer Operator)
+### Ternärer Operator
+Kurzform einer einfachen `if-else`-Zuweisung:
 
 ```java
 bedingung ? wertWennTrue : wertWennFalse;
 ```
 
----
-
-## switch vs. if-else
-
-- `switch` → nur Gleichheit prüfen
-- `if-else` → Bereiche oder komplexe Bedingungen
+Beispiel:
+```java
+int max = (a > b) ? a : b;
+```
 
 ---
 
-## Unterschied: kopfgesteuerte und fußgesteuerte Schleife
+## Verzweigungen
 
-### Kopfgesteuerte Schleife (`while`)
-- Bedingung wird **vor** dem Durchlauf geprüft
-- Kann **0‑mal** laufen
+### if-else
+Wird verwendet für Bereiche oder komplexe Bedingungen.
 
 ```java
-while (i <= z) {
+if (zahl > 0) {
+    System.out.println("Positiv");
+} else {
+    System.out.println("Nicht positiv");
+}
+```
+
+### switch
+Wird verwendet, wenn nur Gleichheit geprüft wird.
+
+```java
+switch (tag) {
+    case 1:
+        System.out.println("Montag");
+        break;
+    case 2:
+        System.out.println("Dienstag");
+        break;
+    default:
+        System.out.println("Unbekannt");
+}
+```
+
+---
+
+## Schleifen (Loops)
+Schleifen werden verwendet, um Anweisungen mehrfach auszuführen.
+
+### while-Schleife (kopfgesteuert)
+- Bedingung wird **vor** jedem Durchlauf geprüft.
+- Kann **0-mal** oder öfter ausgeführt werden.
+
+```java
+int i = 1;
+while (i <= 5) {
     System.out.println(i);
     i++;
 }
 ```
 
-### Fußgesteuerte Schleife (`do-while`)
-- Bedingung wird **nach** dem Durchlauf geprüft
-- Läuft **mindestens 1‑mal**
+---
+
+### do-while-Schleife (fußgesteuert)
+- Bedingung wird **nach** dem Durchlauf geprüft.
+- Wird **mindestens einmal** ausgeführt.
 
 ```java
 int x = 1;
-
 do {
     System.out.println(x);
     x++;
-} while (x <= 100);
+} while (x <= 5);
 ```
 
 ---
----
+
+### for-Schleife (Zählschleife)
+Wird verwendet, wenn die Anzahl der Durchläufe bekannt ist.
+
+```java
+for (int m = 1; m <= 5; m++) {
+    System.out.println(m);
+}
+```
+
 ---
 
-## Mögliche Klausurfragen (Gesamter Stoff)
+### break
+Beendet eine Schleife sofort.
+
+```java
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+        break;
+    }
+}
+```
+
+### continue
+Überspringt den restlichen Schleifendurchlauf.
+
+```java
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) {
+        continue;
+    }
+    System.out.println(i);
+}
+```
+
+---
+
+# Mögliche Klausurfragen (Gesamter Stoff)
 
 ### 1) Was ist der Unterschied zwischen primitiven Datentypen und Objekten?
-<details>
-<summary>Antwort anzeigen</summary>
-
+**Antwort:**
 - Primitive Datentypen speichern direkt einen Wert.
 - Objekte sind Instanzen von Klassen und werden über Referenzen verwaltet.
 
-</details>
-
 ---
 
-### 2) Wann verwendet man `==` und wann `.equals()`?
-<details>
-<summary>Antwort anzeigen</summary>
-
+### 2) Wann verwendet man `==` und wann `.equals()` in Java?
+**Antwort:**
 - `==` bei primitiven Datentypen.
 - `.equals()` bei Objekten wie `String`.
 
-</details>
-
 ---
 
-### 3) Wann verwendet man `switch` statt `if-else`?
-<details>
-<summary>Antwort anzeigen</summary>
-
-Wenn nur Gleichheit eines Wertes geprüft wird.
-
-</details>
-
----
-
-### 4) Unterschied zwischen `float` und `double`?
-<details>
-<summary>Antwort anzeigen</summary>
-
+### 3) Was ist der Unterschied zwischen `float` und `double`?
+**Antwort:**
 - `float`: 32 Bit, weniger genau.
 - `double`: 64 Bit, genauer und Standard.
 
-</details>
+---
+
+### 4) Wann verwendet man `switch` statt `if-else`?
+**Antwort:**
+Wenn nur Gleichheit eines Wertes geprüft wird.
 
 ---
 
 ### 5) Unterschied zwischen kopf- und fußgesteuerter Schleife?
-<details>
-<summary>Antwort anzeigen</summary>
-
-- `while`: Bedingung zuerst → kann 0‑mal laufen.
-- `do-while`: Ausführung zuerst → läuft mindestens 1‑mal.
-
-</details>
+**Antwort:**
+- `while`: Bedingung zuerst → kann 0-mal laufen.
+- `do-while`: Ausführung zuerst → läuft mindestens 1-mal.
 
 ---
 
 ### 6) Was macht der ternäre Operator?
-<details>
-<summary>Antwort anzeigen</summary>
-
+**Antwort:**
 Er ersetzt eine einfache `if-else`-Zuweisung in einer Zeile.
 
-</details>
+
+
+
+system.out.printf (formatierungsmöglichkeiten)
+
+
+Platzhalter
+Abkürzung
+Bedeutung
+%d
+decimal
+ganze Zahl im Dezimalsystem
+%f
+floating point
+Kommazahl (Gleitkommazahl)
+%s
+string
+Text
+%c
+character
+einzelnes Zeichen
+
+%.2f %
+Beginn eines Platzhalters
+.2
+2 Nachkommastellen
+f
+Kommazahl (floating point)
+
