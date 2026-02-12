@@ -48,11 +48,12 @@ public class D14_Cases {
 
         System.out.println(colorText);
 
-        colorText=switch (color) {
+
+        colorText = switch (color) {
             case 'r', 'R' -> colorText = "rot";
             case 'g', 'G' -> colorText = "grün";
             case 'b', 'B' -> colorText = "blau";
-        
+
             default -> colorText = "";
         };
     }

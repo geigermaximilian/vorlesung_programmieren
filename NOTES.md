@@ -65,7 +65,7 @@ Vergleich:
 | `>=` | Größer oder gleich |
 
 ---
-
+ 
 ### Ternärer Operator
 Kurzform einer einfachen `if-else`-Zuweisung:
 
@@ -192,6 +192,8 @@ for (int i = 1; i <= 5; i++) {
 - `==` bei primitiven Datentypen.
 - `.equals()` bei Objekten wie `String`.
 
+--> mache noch ein Beispiel, wie man beides benutzt
+
 ---
 
 ### 3) Was ist der Unterschied zwischen `float` und `double`?
@@ -247,3 +249,24 @@ Beginn eines Platzhalters
 f
 Kommazahl (floating point)
 
+
+        /* Vergleichs-Operatoren: <, <=, >, >=, ==, != */ 
+
+        /* Logische Operatoren: && (logisches Und), || (logisches Oder), ! (logische Verneinung) */
+
+
+
+
+
+
+#Arrays
+am Anfang muss man Größe/Länge des Arrays festlegen. Danach geht nicht mehr --> Einschränkung
+
+int[] array = new int[100];
+
+arrays auch mit zählschleifen/for-schleifen möglich werte einzutragen, hochzuzählen usw --> einfacher und kompakter als 100 variablen deklarieren und initialisieren zu müssen.
+
+
+
+
+Java unterschied von Methoden, Klassen, Attributen, (Objekt)
