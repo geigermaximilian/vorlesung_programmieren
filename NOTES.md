@@ -6,24 +6,24 @@
 Primitive Datentypen speichern **direkt einen Wert**.
 
 ### Ganzzahlen
-| Typ | Größe | Beispiel |
-|-----|-------|----------|
-| `byte` | 8 Bit | `byte b = 10;` |
+| Typ   | Größe | Beispiel |
+|-------|-------|----------|
+| `byte`  | 8 Bit  | `byte b = 10;` |
 | `short` | 16 Bit | `short s = 1000;` |
-| `int` | 32 Bit | `int i = 100000;` |
-| `long` | 64 Bit | `long l = 100000L;` |
+| `int`   | 32 Bit | `int i = 100000;` |
+| `long`  | 64 Bit | `long l = 100000L;` |
 
 ### Kommazahlen
-| Typ | Größe | Beispiel |
-|-----|-------|----------|
-| `float` | 32 Bit | `float f = 3.14F;` |
+| Typ    | Größe | Beispiel |
+|--------|-------|----------|
+| `float`  | 32 Bit | `float f = 3.14F;` |
 | `double` | 64 Bit | `double d = 3.14;` |
 
 ### Weitere primitive Typen
-| Typ | Bedeutung | Beispiel |
-|-----|-----------|----------|
-| `char` | einzelnes Zeichen | `char c = 'A';` |
-| `boolean` | Wahrheitswert | `boolean ok = true;` |
+| Typ      | Bedeutung        | Beispiel |
+|----------|------------------|----------|
+| `char`     | einzelnes Zeichen | `char c = 'A';` |
+| `boolean`  | Wahrheitswert     | `boolean ok = true;` |
 
 ---
 
@@ -35,37 +35,49 @@ Beispiel:
 String text = "Hallo";
 ```
 
-Vergleich:
-- Primitive Typen → `==`
-- Objekte (`String`) → `.equals()`
+### Vergleich: `==` vs `.equals()`
+```java
+int a = 5;
+int b = 5;
+System.out.println(a == b);   // true (Wertvergleich)
+
+String s1 = new String("Hallo");
+String s2 = new String("Hallo");
+
+System.out.println(s1 == s2);        // false (Referenzvergleich)
+System.out.println(s1.equals(s2));   // true (Inhaltsvergleich)
+```
 
 ---
 
 ## Operatoren
 
 ### Arithmetische Operatoren
-| Operator | Bedeutung | Beispiel | Ergebnis |
-|---------|-----------|----------|----------|
-| `+` | Addition | `3 + 2` | `5` |
-| `-` | Subtraktion | `5 - 2` | `3` |
-| `*` | Multiplikation | `4 * 3` | `12` |
-| `/` | Division | `10 / 2` | `5` |
-| `%` | Rest (Modulo) | `10 % 3` | `1` |
-
----
+| Operator | Bedeutung       | Beispiel | Ergebnis |
+|----------|-----------------|----------|----------|
+| `+` | Addition        | `3 + 2`  | `5` |
+| `-` | Subtraktion     | `5 - 2`  | `3` |
+| `*` | Multiplikation  | `4 * 3`  | `12` |
+| `/` | Division        | `10 / 2` | `5` |
+| `%` | Rest (Modulo)   | `10 % 3` | `1` |
 
 ### Vergleichsoperatoren
 | Operator | Bedeutung |
 |----------|-----------|
 | `==` | Gleich |
 | `!=` | Ungleich |
-| `<` | Kleiner als |
+| `<`  | Kleiner als |
 | `<=` | Kleiner oder gleich |
-| `>` | Größer als |
+| `>`  | Größer als |
 | `>=` | Größer oder gleich |
 
----
- 
+### Logische Operatoren
+| Operator | Bedeutung |
+|----------|-----------|
+| `&&` | Logisches UND |
+| `||` | Logisches ODER |
+| `!`  | Logische Verneinung |
+
 ### Ternärer Operator
 Kurzform einer einfachen `if-else`-Zuweisung:
 
@@ -126,8 +138,6 @@ while (i <= 5) {
 }
 ```
 
----
-
 ### do-while-Schleife (fußgesteuert)
 - Bedingung wird **nach** dem Durchlauf geprüft.
 - Wird **mindestens einmal** ausgeführt.
@@ -140,8 +150,6 @@ do {
 } while (x <= 5);
 ```
 
----
-
 ### for-Schleife (Zählschleife)
 Wird verwendet, wenn die Anzahl der Durchläufe bekannt ist.
 
@@ -150,8 +158,6 @@ for (int m = 1; m <= 5; m++) {
     System.out.println(m);
 }
 ```
-
----
 
 ### break
 Beendet eine Schleife sofort.
@@ -178,95 +184,96 @@ for (int i = 1; i <= 5; i++) {
 
 ---
 
-# Mögliche Klausurfragen (Gesamter Stoff)
+## Arrays
+- Ein Array speichert **mehrere Werte gleichen Typs**.
+- Die Größe muss beim Erstellen festgelegt werden.
+- Danach kann die Länge nicht mehr verändert werden.
 
-### 1) Was ist der Unterschied zwischen primitiven Datentypen und Objekten?
+Beispiel:
+```java
+int[] array = new int[100];
+```
+
+Werte mit einer Schleife setzen:
+```java
+for (int i = 0; i < array.length; i++) {
+    array[i] = i;
+}
+```
+
+---
+
+## printf-Formatierung
+
+### Häufige Platzhalter
+| Platzhalter | Bedeutung |
+|-------------|-----------|
+| `%d` | Ganze Zahl (decimal) |
+| `%f` | Kommazahl (floating point) |
+| `%s` | Text (String) |
+| `%c` | Einzelnes Zeichen |
+
+Beispiel:
+```java
+double preis = 12.3456;
+System.out.printf("Preis: %.2f Euro", preis);
+```
+
+Ergebnis:
+```
+Preis: 12.35 Euro
+```
+
+---
+
+## Grundbegriffe der Objektorientierung
+
+| Begriff | Bedeutung |
+|---------|-----------|
+| Klasse | Bauplan für Objekte |
+| Objekt | Konkrete Instanz einer Klasse |
+| Attribut | Eigenschaft eines Objekts |
+| Methode | Funktion/Verhalten eines Objekts |
+
+Beispiel:
+```java
+class Auto {
+    String farbe;     // Attribut
+
+    void fahren() {   // Methode
+        System.out.println("Das Auto fährt.");
+    }
+}
+```
+
+---
+
+# Mögliche Klausurfragen
+
+### 1) Unterschied zwischen primitiven Datentypen und Objekten
 **Antwort:**
 - Primitive Datentypen speichern direkt einen Wert.
 - Objekte sind Instanzen von Klassen und werden über Referenzen verwaltet.
 
----
-
-### 2) Wann verwendet man `==` und wann `.equals()` in Java?
+### 2) Wann verwendet man `==` und wann `.equals()`?
 **Antwort:**
-- `==` bei primitiven Datentypen.
-- `.equals()` bei Objekten wie `String`.
+- `==` bei primitiven Datentypen (Wertvergleich).
+- `.equals()` bei Objekten wie `String` (Inhaltsvergleich).
 
---> mache noch ein Beispiel, wie man beides benutzt
-
----
-
-### 3) Was ist der Unterschied zwischen `float` und `double`?
+### 3) Unterschied zwischen `float` und `double`
 **Antwort:**
 - `float`: 32 Bit, weniger genau.
-- `double`: 64 Bit, genauer und Standard.
-
----
+- `double`: 64 Bit, genauer und Standard in Java.
 
 ### 4) Wann verwendet man `switch` statt `if-else`?
 **Antwort:**
 Wenn nur Gleichheit eines Wertes geprüft wird.
 
----
-
-### 5) Unterschied zwischen kopf- und fußgesteuerter Schleife?
+### 5) Unterschied zwischen kopf- und fußgesteuerter Schleife
 **Antwort:**
-- `while`: Bedingung zuerst → kann 0-mal laufen.
-- `do-while`: Ausführung zuerst → läuft mindestens 1-mal.
-
----
+- `while`: Bedingung zuerst → kann 0‑mal laufen.
+- `do-while`: Ausführung zuerst → läuft mindestens 1‑mal.
 
 ### 6) Was macht der ternäre Operator?
 **Antwort:**
 Er ersetzt eine einfache `if-else`-Zuweisung in einer Zeile.
-
-
-
-
-system.out.printf (formatierungsmöglichkeiten)
-
-
-Platzhalter
-Abkürzung
-Bedeutung
-%d
-decimal
-ganze Zahl im Dezimalsystem
-%f
-floating point
-Kommazahl (Gleitkommazahl)
-%s
-string
-Text
-%c
-character
-einzelnes Zeichen
-
-%.2f %
-Beginn eines Platzhalters
-.2
-2 Nachkommastellen
-f
-Kommazahl (floating point)
-
-
-        /* Vergleichs-Operatoren: <, <=, >, >=, ==, != */ 
-
-        /* Logische Operatoren: && (logisches Und), || (logisches Oder), ! (logische Verneinung) */
-
-
-
-
-
-
-#Arrays
-am Anfang muss man Größe/Länge des Arrays festlegen. Danach geht nicht mehr --> Einschränkung
-
-int[] array = new int[100];
-
-arrays auch mit zählschleifen/for-schleifen möglich werte einzutragen, hochzuzählen usw --> einfacher und kompakter als 100 variablen deklarieren und initialisieren zu müssen.
-
-
-
-
-Java unterschied von Methoden, Klassen, Attributen, (Objekt)
