@@ -277,3 +277,47 @@ Wenn nur Gleichheit eines Wertes geprüft wird.
 ### 6) Was macht der ternäre Operator?
 **Antwort:**
 Er ersetzt eine einfache `if-else`-Zuweisung in einer Zeile.
+
+
+
+--------------------------
+
+
+Prozeduale Programmierung
+
+
+---
+...
+
+-----
+Objektorientierte Programmierung
+
+
+- Klassen: komplexe datentypen
+- Attribute: Eigenschaften von Objekten
+
+
+- Klassen: Bauplan für Objekte
+- Objekte: Konkrete Ausprägung von Klassen
+
+
+#### Objekte und Referenzen
+
+
+
+
+
+
+
+
+mit == wird der inhalt geprüft bei referenzen anders (equals bei Zeichenketten und Objekten)
+
+Referenzen - Speicherort
+
+
+neue objekte entstehen durch new operator
+
+arraylist unterschied zu normalem array wissen
+
+
+this. referenz bedeutung usw
