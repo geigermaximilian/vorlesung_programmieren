@@ -321,3 +321,37 @@ arraylist unterschied zu normalem array wissen
 
 
 this. referenz bedeutung usw
+
+---
+
+### Konstrukor:
+    - werden einmal aufgerufen: beim Erstellen des Objekts
+    - muss so heißen, wie die Klasse (class)
+    - hat keinen Rückgabewert (return)
+    - man kann diese nicht selbst aufrufen -> geht nur durch new = beim Erstellen eines Objekts
+
+    Frage: Warum darf Konstruktor keinen return haben:
+            - weil die Objekt-Referenz schon automatisch existiert. Der Konstruktor arbeitet nur mit dieser bereits erzeugten Referenz.
+
+
+### Unveränderliche Attribute: mit final
+    - z.B.: private final String color;
+
+    public LightBulb(String color){
+        this.color = color;
+    } //Konstruktor
+
+
+    finale unveränderliche Attribute in Konstruktor, weil nur einmaliger Aufruf
+
+---
+
+### "Überladene Methoden"
+sind Methoden, die den selben Namen haben in der selben Klasse haben aber unterschiedliche Parameter.
+
+
+---
+
+Bei Entitätsklassen: am besten eigene toString()-Methoden erstellen
+
+bei toSting drüber @Override schreiben 

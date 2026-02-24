@@ -11,10 +11,10 @@ public class D21_Objects {
 
         i=5;
         light1 = new TableLight();
-        LightBulb redLightBulb = new LightBulb();
+        //LightBulb redLightBulb = new LightBulb();
 
         // redLightBulb.color = "rot"; //ausführlich: redLightBulb.color = new String("rot");
-        light1.changeLightBulb(redLightBulb);
+        //light1.changeLightBulb(redLightBulb);
 
         int x = 1;
 

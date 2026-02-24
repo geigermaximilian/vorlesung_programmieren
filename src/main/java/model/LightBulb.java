@@ -1,13 +1,18 @@
 package model;
 
 public class LightBulb {
-    private String color;
+    private final String color;
 
-    public void setColor(String color){
+    public LightBulb(String color){
         this.color = color;
     }
 
     public String getColor(){
         return color;
+    }
+
+
+    public String toString(){
+        return "LightBulb [color= " + color + "]";
     }
 }

@@ -5,10 +5,10 @@ import model.TableLight;
 
 public class D20_Classes {
     public static void main(String[] args) {
-        LightBulb redLightBulb = new LightBulb();
+        //LightBulb redLightBulb = new LightBulb();
         //redLightBulb.color = "rot";
 
-        LightBulb blueLightBulb = new LightBulb();
+        //LightBulb blueLightBulb = new LightBulb();
         //blueLightBulb.color = "blau";
 
         TableLight tableLight = new TableLight();
@@ -17,11 +17,11 @@ public class D20_Classes {
         System.out.println(tableLight.isShining());
         tableLight.switchOn();
         System.out.println(tableLight.isShining());
-        tableLight.changeLightBulb(blueLightBulb);
+        //tableLight.changeLightBulb(blueLightBulb);
         System.out.println(tableLight.isShining());
         // System.out.println(tableLight.lightBulb.color);
 
-        LightBulb oldLightBulb = tableLight.changeLightBulb(redLightBulb);
+        //LightBulb oldLightBulb = tableLight.changeLightBulb(redLightBulb);
 
         System.out.println(tableLight.isShining());
         // System.out.println(tableLight.lightBulb.color);

@@ -5,6 +5,16 @@ public class TableLight {
     private boolean isOn;
     private LightBulb lightBulb;
 
+    public TableLight(){
+
+    }
+
+    public TableLight(LightBulb lightBulb){
+        this.lightBulb = lightBulb;
+    }
+
+    /* ------------------------------- */
+
     public void plugIn() {
         isConnected = true;
     }
@@ -50,6 +60,11 @@ public class TableLight {
 
     public LightBulb geLightBulb(){
         return lightBulb;
+    }
+
+
+    public String toString(){
+        return "Tabellight [isCOnnected=" + isConnected + ", isOn=" +isOn + ", lightBulb=" + lightBulb +"]";
     }
 
 }
