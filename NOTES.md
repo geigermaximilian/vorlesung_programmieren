@@ -344,6 +344,8 @@ this. referenz bedeutung usw
 
     finale unveränderliche Attribute in Konstruktor, weil nur einmaliger Aufruf
 
+    final muss zwingend initialisiert werden!!
+
 ---
 
 ### "Überladene Methoden"
@@ -430,3 +432,12 @@ public class D28_ForEachLoop {
     }
 }
 
+
+
+
+---
+
+FÜR KLAUSUR !!
+
+toString methode aufschreiben
+for-each
