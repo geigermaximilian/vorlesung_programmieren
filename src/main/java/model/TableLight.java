@@ -4,16 +4,17 @@ public class TableLight {
     private boolean isConnected;
     private boolean isOn;
     private LightBulb lightBulb;
+    private final PlugType plugType;
 
     private static int numberOfTableLights;
 
-
-
-    public TableLight(){
+    public TableLight() {
+        plugType = new PlugType("Typ F", "CEE 7/4", "Europa");
         numberOfTableLights++;
     }
 
-    public TableLight(LightBulb lightBulb){
+    public TableLight(LightBulb lightBulb) {
+        plugType = new PlugType("Typ F", "CEE 7/4", "Europa");
         numberOfTableLights++;
         this.lightBulb = lightBulb;
     }
@@ -50,29 +51,27 @@ public class TableLight {
             return false;
         }
 
-        //oder:
-        //return isConnected && isOn && lightBulb != null;
+        // oder:
+        // return isConnected && isOn && lightBulb != null;
     }
 
-    public boolean isConnected(){
+    public boolean isConnected() {
         return isConnected;
     }
 
-    public boolean isOn(){
+    public boolean isOn() {
         return isOn;
     }
-    
 
-    public LightBulb geLightBulb(){
+    public LightBulb geLightBulb() {
         return lightBulb;
     }
 
-
-    public String toString(){
-        return "Tabellight [isCOnnected=" + isConnected + ", isOn=" +isOn + ", lightBulb=" + lightBulb +"]";
+    public String toString() {
+        return "Tabellight [isCOnnected=" + isConnected + ", isOn=" + isOn + ", lightBulb=" + lightBulb + ", plugType=" +plugType + "]";
     }
 
-    public static int getNumberOfTableLights(){
+    public static int getNumberOfTableLights() {
         return numberOfTableLights;
     }
 

@@ -371,7 +371,7 @@ nicht statische sind objektbezogen
 
 ---
 
-public final static
+public final static = konstanten und damen dann in CAPS zB public final static TestKlasse TESTNAME
 
 öffentlich, statisch usw.
 
