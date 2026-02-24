@@ -355,3 +355,78 @@ sind Methoden, die den selben Namen haben in der selben Klasse haben aber unters
 Bei Entitätsklassen: am besten eigene toString()-Methoden erstellen
 
 bei toSting drüber @Override schreiben 
+
+---
+
+### Statische und nichtstatische Elemente
+_erkären mit Beispielen usw_
+
+Objektorientierung und sttatische Elemente gehen nicht
+
+gehören der Klasse für alle Elemente
+
+nicht statische sind objektbezogen
+
+---
+
+public final static
+
+öffentlich, statisch usw.
+
+---
+in schleifen bei Länge bon Arrays = .length(), bei ArrayList = .size()
+
+bei List:
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Hans");
+        names.add("Peter");
+        names.add("Lisa");
+        names.add("Anna");
+
+        /* klassische for-Schleife */
+        for(int i=0; i<names.size(); i++){
+            String name = names.get(i);
+        }
+--> auch mit get usw
+
+
+---> mache tabelle mit vergleich wie man was wo nutzt
+
+---
+
+
+
+package main;
+
+import java.util.ArrayList;
+
+public class D28_ForEachLoop {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Hans");
+        names.add("Peter");
+        names.add("Lisa");
+        names.add("Anna");
+
+        /* klassische for-Schleife */
+        for(int i=0; i<names.size(); i++){
+            String name = names.get(i);
+            System.out.println(name);
+        }
+
+        System.out.println();
+
+
+        
+
+        /* For-Each-Schleife */
+
+        for (String name : names){ // "Für jeden Namen in der Namensliste"
+            System.out.println(names);
+        }
+
+    }
+}
+

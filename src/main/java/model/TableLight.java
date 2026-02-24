@@ -5,11 +5,16 @@ public class TableLight {
     private boolean isOn;
     private LightBulb lightBulb;
 
-    public TableLight(){
+    private static int numberOfTableLights;
 
+
+
+    public TableLight(){
+        numberOfTableLights++;
     }
 
     public TableLight(LightBulb lightBulb){
+        numberOfTableLights++;
         this.lightBulb = lightBulb;
     }
 
@@ -65,6 +70,10 @@ public class TableLight {
 
     public String toString(){
         return "Tabellight [isCOnnected=" + isConnected + ", isOn=" +isOn + ", lightBulb=" + lightBulb +"]";
+    }
+
+    public static int getNumberOfTableLights(){
+        return numberOfTableLights;
     }
 
 }
