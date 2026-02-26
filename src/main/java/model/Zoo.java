@@ -3,26 +3,29 @@ package model;
 import java.util.ArrayList;
 
 public class Zoo {
-    private String name;
-    private ArrayList<Animal> animals;
+    private final String name;
+    private final ArrayList<Animal> animals;
 
-    public void setName(String name){
-        this.name= name;
-    }
-
-    public String getName(){
-        return name;
-    }
-
-    public void initializeAnimals(){
+    public Zoo(String name) {
+        this.name = name;
         animals = new ArrayList<>();
     }
 
-    public void addAnimal(Animal animal){
+    public String getName() {
+        return name;
+    }
+
+    public void addAnimal(Animal animal) {
         animals.add(animal);
     }
 
-    public ArrayList<Animal> getAnimals(){
+    public ArrayList<Animal> getAnimals() {
         return animals;
+    }
+
+
+    @Override
+    public String toString(){
+        return "Zoo [name = " + name + ", animals = " + animals + "]";
     }
 }

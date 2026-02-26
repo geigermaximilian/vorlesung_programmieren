@@ -14,6 +14,6 @@ public class D23_DataEncapsulation {
         //light1.changeLightBulb(redLightBulb);
 
         System.out.println(light1.isShining());
-        System.out.println(light1.geLightBulb().getColor());
+        System.out.println(light1.getLightBulb().getColor());
     }
 }

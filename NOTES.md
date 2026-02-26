@@ -436,7 +436,9 @@ public class D28_ForEachLoop {
 
 
 ---
-
+## Enumerations 
+    = Aufzählungen
+---
 FÜR KLAUSUR !!
 
 toString methode aufschreiben
